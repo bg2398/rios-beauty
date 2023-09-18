@@ -1,0 +1,11 @@
+Model Information:
+* title:	Dyson Supersonic
+* source:	https://sketchfab.com/3d-models/dyson-supersonic-8af694695bc44a3cb8df970a0f296b12
+* author:	WAYNOT (https://sketchfab.com/WAYNOT)
+
+Model License:
+* license type:	CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)
+* requirements:	Author must be credited. No commercial use.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Dyson Supersonic" (https://sketchfab.com/3d-models/dyson-supersonic-8af694695bc44a3cb8df970a0f296b12) by WAYNOT (https://sketchfab.com/WAYNOT) licensed under CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)

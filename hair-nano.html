@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Work</title>
+    <style>
+        /* Common styles for both desktop and mobile */
+        body {
+            background-image: url(src/assets/services-bg3.jpg);
+            color: #B76E79;
+        }
+
+        .heading {
+            justify-content: center;
+            text-align: center;
+        }
+
+        .box-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .box {
+            width: calc(50% - 75px);
+            margin: 10px;
+            text-align: center;
+            padding: 20px;
+            border: 4px solid #B76E79;
+            border-radius: 7px;
+        }
+
+        .box img {
+            max-width: 100%;
+            height: 400px;
+            margin-bottom: 10px;
+            border-radius: 10px;
+        }
+
+        .box h1 {
+            font-size: x-large;
+            justify-content: center;
+            text-align: center;
+            font-size: x-large;
+        }
+
+        .column {
+            flex-basis: 100%;
+            padding: 0 10px;
+            text-align: center;
+        }
+
+        /* Mobile-specific styles */
+        @media (max-width: 768px) {
+            .box {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="services" id="services">
+        <h1 class="heading">NanoPlastia</h1>
+        <h2 class="heading" id="typewriter">
+            <!-- The text will be inserted here dynamically using JavaScript -->
+        </h2>
+        <div class="box-container">
+            <div class="box"> 
+                <h1>Before</h1>
+                <div class="column">
+                    <img src="src/assets/nano-before1.jpg" alt="">
+                </div>
+                <div class="column">
+                    <img src="src/assets/BeforeNano2.jpg" alt="">
+                </div>
+            </div>
+            <div class="box">
+                <h1>After</h1>
+                <div class="column">
+                    <img src="src/assets/nano-after1.jpg" alt="">
+                </div>
+                <div class="column">
+                    <img src="src/assets/AfterNano2.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Typewriter effect
+        const text = "Nanoplastia is a smoothing treatment and a repairing treatment. Makes the hair extremely shiny and reflective\nLasts for 4-6 months\nand safer to do when breast feeding/pregnant.\nBest for brunettes";
+        const typewriter = document.getElementById("typewriter");
+        let i = 0;
+
+        function type() {
+            if (i < text.length) {
+                typewriter.innerHTML += text.charAt(i);
+                i++;
+                setTimeout(type, 50); // Adjust the typing speed (milliseconds)
+            }
+        }
+
+        type(); // Start the typing effect when the page loads
+    </script>
+</body>
+</html>
